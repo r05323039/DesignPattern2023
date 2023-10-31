@@ -12,9 +12,10 @@ public class MeatFactory {
             meat = new Pork();
         } else if ("Turkey".equals(meatType)) {
             meat = new Turkey();
-        }// 缺陷 : 增加種類需要修改else if，違反開放封閉原則，只適用項目不會增加
+        }
         return meat;
     }
-
+// 缺陷 : 增加種類需要修改else if，違反開放封閉原則，只適用項目不會增加
+// 解法 : FactoryMethod，由一個工廠管理所有肉類 -> 每種肉類由一種工廠管理，新增一個工廠代替增加一組if else
 
 }
