@@ -1,26 +1,36 @@
 package ian.Creational.AbstractFactory;
 
+import ian.Creational.SimpleFactory.FactoryMethod.MeatFactory2;
+import ian.Creational.SimpleFactory.FactoryMethod.PorkFactory;
 import ian.Creational.SimpleFactory.goodMeal.Meat;
-import ian.Creational.SimpleFactory.goodMeal.Pork;
-import ian.Creational.SimpleFactory.goodMeal.Turkey;
 
 public class KFC extends AbsRestaurant {
-    Meat createMeat(String type) {//定義取餐方法 : 本店生產Pork,Turkey
-        Meat meal = null;
-        if ("Pork".equals(type)) {
-            meal = new Pork();
-        } else if ("Turkey".equals(type)) {
-            meal = new Turkey();
-        }
-        return meal;
+    private MeatFactory2 factory2;
+
+    public KFC(MeatFactory2 factory2) {
+        this.factory2 = factory2;
     }
 
-    Sauce getSauce() { //定義取醬方法 : 提供辣椒醬
-        return new HotSauce();
+    @Override
+    Meat createMeat() {
+        return factory2.createMeat();
     }
+
+    @Override
+    Sauce createSauce(String type) {
+        if (type.equals("Hot")) {
+            return new HotSauce();
+        } else if (type.equals("Soy")) {
+            return new SoySauce();
+        } else throw new RuntimeException("沒有這種醬料");
+    }
+
+
+
+
 
     public static void main(String[] args) {
-        KFC kfc = new KFC();
-        kfc.cookMeat("Pork");
+        KFC kfc = new KFC(new PorkFactory());
+        kfc.cookMeatWith("Hot");
     }
 }
