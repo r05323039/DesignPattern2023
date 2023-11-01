@@ -1,4 +1,4 @@
-package ian.Creational.Singleton;
+package ian.Domain.Singleton;
 
 class SuperMarket {
     private int quantity = 100;
