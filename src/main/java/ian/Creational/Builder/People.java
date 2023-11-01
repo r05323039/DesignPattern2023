@@ -9,25 +9,30 @@ public class People {
     private String lastName;
     private String nickName;
 
-    private People(Builder builder) { // private 只有內部class可調用，透過Builder物件過渡屬性，
+    private People(Builder builder) {
+        // 透過內部類Builder 過渡屬性
+        // 內、外建構子都private，另外提供public方法調用建構子
         this.firstName = builder.firstName;
         this.lastName = builder.lastName;
         this.nickName = builder.nickName;
     }
 
     public static Builder Builder(String firstName, String lastName) {
-        //先完成內部類Builder的建構子，外部物件提供公開靜態方法，建構Builder
+        //先完成內部類Builder的建構子
+        //透過People類別的靜態方法，建立Builder實例，避免new People.Builder()
         return new Builder(firstName, lastName);
     }
 
 
     public static class Builder {
+        //內部類別會隱式地保有指向外部類別"實例"的參考。
+        //如果內部類別不是靜態的，必須先建立一個外部類別的實例，然後才能建立內部類別的實例。
         private String firstName;
         private String lastName;
         private String nickName;
 
-        public Builder(String firstName, String lastName) {
-            //Builder建構子設定必填屬性，外部public static Builder Builder再配合修改
+        private Builder(String firstName, String lastName) {// Builder建構子設定必填屬性
+            // 只能透過People提供的靜態方法，不能new People.Builder()
             this.firstName = firstName;
             this.lastName = lastName;
         }
