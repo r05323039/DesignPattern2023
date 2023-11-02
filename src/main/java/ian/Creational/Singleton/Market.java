@@ -1,4 +1,4 @@
-package ian.Domain.Singleton;
+package ian.Creational.Singleton;
 
 public enum Market {
     // 單例模式 : 直接開enum就好
