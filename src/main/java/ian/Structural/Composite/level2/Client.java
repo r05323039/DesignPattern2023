@@ -25,8 +25,8 @@ class Client {
 
         root.displayAbsolutePath();
         System.out.println("=== root remove musicDir ===");
-        System.out.println("=== root ===");
         root.remove(musicDir);// 斷開節點，後面就全沒了
+        System.out.println("=== root ===");
         root.displayAbsolutePath();
         System.out.println("=== musicDir ===");
         musicDir.displayAbsolutePath();

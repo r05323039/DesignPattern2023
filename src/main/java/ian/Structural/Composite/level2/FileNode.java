@@ -1,6 +1,6 @@
 package ian.Structural.Composite.level2;
 
-class FileNode extends NodeImpl {
+class FileNode extends FileSystemNodeImpl {
 
     public FileNode(String name) {
         super(name);
