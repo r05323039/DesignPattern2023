@@ -18,7 +18,7 @@ class MeatClassTypeFactory {
         try {
             return meatType.newInstance();
         } catch (InstantiationException | IllegalAccessException e) {
-            throw new IllegalArgumentException("Unknown enemy type: " + meatType);
+            throw new IllegalArgumentException("Unknown type: " + meatType);
         }
     }
 
