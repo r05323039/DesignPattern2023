@@ -1,8 +1,8 @@
-package ian.Creational.SimpleFactory;
+package ian.Creational.SimpleFactory.level1;
 
-import ian.Creational.SimpleFactory.goodMeal.Meat;
-import ian.Creational.SimpleFactory.goodMeal.Pork;
-import ian.Creational.SimpleFactory.goodMeal.Turkey;
+import ian.Creational.SimpleFactory.level1.goodMeal.Meat;
+import ian.Creational.SimpleFactory.level1.goodMeal.Pork;
+import ian.Creational.SimpleFactory.level1.goodMeal.Turkey;
 
 public class MeatFactory {
     //一個class來負責建立其他class的實例，被建立的通常都具有共同的super class

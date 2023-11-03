@@ -1,6 +1,6 @@
 package ian.Creational.AbstractFactory;
 
-import ian.Creational.SimpleFactory.goodMeal.Meat;
+import ian.Creational.SimpleFactory.level1.goodMeal.Meat;
 
 public abstract class AbsRestaurant {
     // 工廠方法是針對一種物件。

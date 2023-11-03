@@ -1,4 +1,4 @@
-package ian.Creational.SimpleFactory.goodMeal;
+package ian.Creational.SimpleFactory.level1.goodMeal;
 
 public interface Meat {
     void cook();

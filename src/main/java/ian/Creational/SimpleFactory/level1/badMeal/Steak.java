@@ -1,4 +1,4 @@
-package ian.Creational.SimpleFactory.badMeal;
+package ian.Creational.SimpleFactory.level1.badMeal;
 
 public class Steak {
 

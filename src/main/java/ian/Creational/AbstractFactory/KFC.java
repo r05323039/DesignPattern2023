@@ -1,8 +1,8 @@
 package ian.Creational.AbstractFactory;
 
-import ian.Creational.SimpleFactory.FactoryMethod.MeatFactory2;
-import ian.Creational.SimpleFactory.FactoryMethod.PorkFactory;
-import ian.Creational.SimpleFactory.goodMeal.Meat;
+import ian.Creational.SimpleFactory.level1.FactoryMethod.MeatFactory2;
+import ian.Creational.SimpleFactory.level1.FactoryMethod.PorkFactory;
+import ian.Creational.SimpleFactory.level1.goodMeal.Meat;
 
 public class KFC extends AbsRestaurant {
     private MeatFactory2 factory2;

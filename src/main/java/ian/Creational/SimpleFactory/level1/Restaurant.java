@@ -1,11 +1,10 @@
-package ian.Creational.SimpleFactory;
+package ian.Creational.SimpleFactory.level1;
 
-import ian.Creational.SimpleFactory.FactoryMethod.PorkFactory;
-import ian.Creational.SimpleFactory.badMeal.Chicken;
-import ian.Creational.SimpleFactory.badMeal.Steak;
-import ian.Creational.SimpleFactory.goodMeal.Meat;
-import ian.Creational.SimpleFactory.goodMeal.Pork;
-import ian.Creational.SimpleFactory.goodMeal.Turkey;
+import ian.Creational.SimpleFactory.level1.badMeal.Chicken;
+import ian.Creational.SimpleFactory.level1.badMeal.Steak;
+import ian.Creational.SimpleFactory.level1.goodMeal.Meat;
+import ian.Creational.SimpleFactory.level1.goodMeal.Pork;
+import ian.Creational.SimpleFactory.level1.goodMeal.Turkey;
 
 public class Restaurant {
     public Steak cookSteak() {

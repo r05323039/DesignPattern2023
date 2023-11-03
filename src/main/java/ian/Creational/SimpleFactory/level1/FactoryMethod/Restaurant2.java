@@ -1,6 +1,6 @@
-package ian.Creational.SimpleFactory.FactoryMethod;
+package ian.Creational.SimpleFactory.level1.FactoryMethod;
 
-import ian.Creational.SimpleFactory.goodMeal.Meat;
+import ian.Creational.SimpleFactory.level1.goodMeal.Meat;
 
 public class Restaurant2 {
     private MeatFactory2 factory;// 工廠也變成介面，可解決項目增加，違反開放封閉問題
