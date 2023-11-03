@@ -5,4 +5,5 @@ package ian.Creational.AbstractFactory.level1;
 
     Table createTable();
 
+    // 如果未來需要不同風格的工廠，就不用修改原本的工廠
 }
