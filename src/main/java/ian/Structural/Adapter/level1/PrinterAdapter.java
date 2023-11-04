@@ -1,6 +1,6 @@
 package ian.Structural.Adapter.level1;
 
-public class PrinterAdapter implements Computer{
+public class PrinterAdapter implements Computer{// 操作物件，調整方法，使其適用於新介面
     private OldPrinter oldPrinter;
 
     public PrinterAdapter(OldPrinter oldPrinter) {

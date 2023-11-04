@@ -2,6 +2,7 @@ package ian.Structural.Decorator.level1;
 
 public abstract class CoffeeDecorator implements Coffee {
     // 裝飾者模式用於給一個對象添加額外的職責，而不需要修改原始類的代碼。
+    // 各種buff加強角色狀態
     // 創建一個包裝原始物件(被裝飾)的裝飾者，並在裝飾者中增加新的行為和操作，達到擴展功能的目的。
     private Coffee decorated;//原始物件(被裝飾)
     private String decoratorDescription;//裝飾者特性
