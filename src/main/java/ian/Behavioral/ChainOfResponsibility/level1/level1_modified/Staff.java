@@ -17,6 +17,7 @@ abstract class Staff implements PurchasingHandler {
 
     @Override
     public boolean approvePurchase(int amount) {
+        //modified版本，類別的授權金額提升為成員屬性，把傳遞責任的邏輯，集中在抽象類
         if (amount < authorizedAmount) {
             System.out.println(this.name + "同意採購，金額: " + amount);
             //這邊可以寫成抽象方法，讓各class繼承後，實作處理邏輯 (責任掉到我身上，要做什麼...)
