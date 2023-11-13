@@ -1,4 +1,4 @@
-package ian.Behavioral.ChainOfResponsibility.level1.level1_modified;
+package ian.Behavioral.ChainOfResponsibility.level1_modified;
 
 abstract class Staff implements PurchasingHandler {
     protected String name;
