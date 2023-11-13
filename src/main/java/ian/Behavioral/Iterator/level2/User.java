@@ -3,7 +3,7 @@ package ian.Behavioral.Iterator.level2;
 import java.util.HashSet;
 import java.util.Set;
 
-public class User {
+class User {
     private String name;
     private Set<User> friends;
 

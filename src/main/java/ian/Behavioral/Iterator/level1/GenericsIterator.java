@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.function.Consumer;
 
 class GenericsIterator<T> implements Iterator {
-    // 將Collections傳入迭代器，
     private List<T> list;
     private int index = -1;
 
