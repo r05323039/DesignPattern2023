@@ -12,6 +12,7 @@ class User {
     void joinChatRoom(Mediator room) {
         this.chatRoom = room;
         room.addUser(this);
+        System.out.println(name + "加入會議");
     }
 
     void sendMessage(String message) {
