@@ -2,22 +2,14 @@ package ian.Behavioral.State.level1;
 
 class Client {
     public static void main(String[] args) {
-        MusicPlayer player = new MusicPlayer("MP3");
+        NetworkConnection c = new NetworkConnection("8080");
 
-        player.stop();
-        player.stop();
-        player.play();
-        player.play();
-        player.play();
-        player.play();
-        player.play();
-        player.charge();
-        player.stop();
-
-        player.play();
-        player.play();
-        player.charge();
-        player.play();
-        player.stop();
+        c.connect();
+        c.connect();
+        c.connect();
+        c.disconnect();
+        c.disconnect();
+        c.connect();
+        c.connect();
     }
 }

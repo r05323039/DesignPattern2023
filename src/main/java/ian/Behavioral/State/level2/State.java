@@ -1,4 +1,4 @@
-package ian.Behavioral.State.level1;
+package ian.Behavioral.State.level2;
 
 interface State {//定義不同的狀態，再由代表狀態class實作執行邏輯
 

@@ -1,4 +1,4 @@
-package ian.Behavioral.State.level1;
+package ian.Behavioral.State.level2;
 
 class StoppedState implements State {
     @Override
