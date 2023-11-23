@@ -1,4 +1,4 @@
-package ian.Structural.Adapter.level3;
+package ian.Structural.Adapter.level2;
 
 public interface Shape {
     void draw();

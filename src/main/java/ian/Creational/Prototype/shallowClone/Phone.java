@@ -2,7 +2,7 @@ package ian.Creational.Prototype.shallowClone;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class Phone {
+class Phone {
     private String phoneNumber;
 
     public Phone(String phoneNumber) {
@@ -13,10 +13,10 @@ public class Phone {
         return phoneNumber;
     }
 
-    public Phone setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-        return this;
     }
+
     @Override
     public String toString() {
         return ReflectionToStringBuilder.toString(this);

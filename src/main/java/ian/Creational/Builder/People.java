@@ -4,7 +4,7 @@ import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import static org.apache.commons.lang3.builder.ToStringStyle.*;
 
-public class People {
+class People {
     private String firstName;
     private String lastName;
     private String nickName;
