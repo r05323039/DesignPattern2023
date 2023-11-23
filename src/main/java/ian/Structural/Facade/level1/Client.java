@@ -1,6 +1,6 @@
 package ian.Structural.Facade.level1;
 
-public class Client {
+class Client {
     public static void main(String[] args) {
         TvFacade controller = new TvFacade(new Tv(), new ElectricSystem());
         controller.turnOn();

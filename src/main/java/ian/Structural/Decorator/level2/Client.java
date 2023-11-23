@@ -1,6 +1,6 @@
 package ian.Structural.Decorator.level2;
 
-public class Client {
+class Client {
     public static void main(String[] args) {
         TextFile file = new TextFileDecoreted("123456789");
 

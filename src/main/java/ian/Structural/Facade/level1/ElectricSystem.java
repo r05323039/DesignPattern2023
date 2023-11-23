@@ -4,10 +4,10 @@ class ElectricSystem {
 
 
     public void on() {
-        System.out.println("power is ready.");
+        System.out.println("ElectricSystem power is ready.");
     }
 
     public void off() {
-        System.out.println("power is interrupted.");
+        System.out.println("ElectricSystem power is interrupted.");
     }
 }

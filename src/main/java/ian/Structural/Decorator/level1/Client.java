@@ -1,6 +1,6 @@
 package ian.Structural.Decorator.level1;
 
-public class Client {
+class Client {
 
     public static void main(String[] args) {
         Coffee coffee = new PureCoffee(10);

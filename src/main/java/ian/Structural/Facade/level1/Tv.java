@@ -1,6 +1,6 @@
 package ian.Structural.Facade.level1;
 
-public class Tv {
+class Tv {
     private int volume;
 
     public void setVolume(int volume) {
@@ -19,7 +19,7 @@ public class Tv {
     }
 
     private void printVolume() {
-        System.out.println("volume : " + this.volume);
+        System.out.println("TV volume : " + this.volume);
     }
 
 }

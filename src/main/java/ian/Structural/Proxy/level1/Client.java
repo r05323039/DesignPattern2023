@@ -1,6 +1,6 @@
 package ian.Structural.Proxy.level1;
 
-public class Client {
+class Client {
     public static void main(String[] args) {
         SensitiveDataProxy proxy = new SensitiveDataProxy("1234");
         System.out.println(proxy.getData());

@@ -1,6 +1,6 @@
 package ian.Structural.Proxy.level2;
 
- class BookSearchService implements BookSearch{
+class BookSearchService implements BookSearch {
     @Override
     public String search(String bookTitle) {
         try {

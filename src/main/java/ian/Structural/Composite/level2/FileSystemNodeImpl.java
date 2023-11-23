@@ -1,6 +1,6 @@
 package ian.Structural.Composite.level2;
 
-public class FileSystemNodeImpl implements FileSystemNode {
+class FileSystemNodeImpl implements FileSystemNode {
     // 樹葉（Leaf）和樹枝（Composite）有共同的方法和屬性，共同的抽象類別先實作介面，再讓樹枝樹葉繼承
     // 樹枝有額外的責任去管理子元件。
     private String name;

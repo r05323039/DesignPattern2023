@@ -1,6 +1,6 @@
 package ian.Structural.Facade.level2;
 
-public class Client {
+class Client {
 
     public static void main(String[] args) {
         EmploymentFacade employmentFacade = new EmploymentFacade();

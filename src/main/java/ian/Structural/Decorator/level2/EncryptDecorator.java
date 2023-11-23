@@ -3,7 +3,7 @@ package ian.Structural.Decorator.level2;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class EncryptDecorator extends AbstractTextFileDecorator {
+class EncryptDecorator extends AbstractTextFileDecorator {
     public EncryptDecorator(TextFile file) {
         super(file);
     }

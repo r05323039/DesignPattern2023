@@ -1,6 +1,6 @@
 package ian.Structural.Proxy.level2;
 
-public class Client {
+class Client {
     public static void main(String[] args) throws InterruptedException {
         BookSearchProxy proxy = new BookSearchProxy(new BookSearchService());
         Thread.sleep(500);
