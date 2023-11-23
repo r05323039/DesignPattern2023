@@ -10,11 +10,13 @@ class Tv implements Device {
 
     @Override
     public void enable() {
+        System.out.println("Tv on");
         this.on = true;
     }
 
     @Override
     public void disable() {
+        System.out.println("Tv off");
         this.on = false;
     }
 }

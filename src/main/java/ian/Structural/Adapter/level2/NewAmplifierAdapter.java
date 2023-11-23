@@ -1,6 +1,6 @@
 package ian.Structural.Adapter.level2;
 
-public class NewAmplifierAdapter implements Amplifier {
+class NewAmplifierAdapter implements Amplifier {
 
     private NewAmplifier complexShape;
     private double factor;
@@ -15,6 +15,6 @@ public class NewAmplifierAdapter implements Amplifier {
 
     @Override
     public double enlarge() {
-       return complexShape.scale(factor);
+        return complexShape.scale(factor);
     }
 }

@@ -1,6 +1,6 @@
 package ian.Structural.Bridge.level2;
 
 
-public interface Sender {
+interface Sender {
     void sendMessage(Message message);
 }
